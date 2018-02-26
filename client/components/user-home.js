@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
+import {DreamList} from '.'
+
 /**
  * COMPONENT
  */
@@ -11,13 +13,16 @@ export const UserHome = (props) => {
   return (
     <div>
       <h3>Welcome, {email}</h3>
-      <ul>
-        <li>The Night Mare</li>
-        <li>Help I Forgot My Pants</li>
-        <li>I'm flying, Jack!</li>
-        <li>I'm falling…</li>
-        <li>It's summer</li>
-      </ul>
+
+      <DreamList dreams={[
+        'The Night Mare',
+        'Help I Forgot My Pants',
+        'I\'m flying, Jack!',
+        'I\'m falling…',
+        'I\'s summer',
+        'Naked at school again',
+        "I can't drive my car",
+      ]} />
     </div>
   )
 }
