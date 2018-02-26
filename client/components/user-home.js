@@ -13,9 +13,15 @@ export const UserHome = (props) => {
   return (
     <div>
       <h3>Welcome, {email}</h3>
+
       <DreamList dreams={[
+        'The Night Mare',
+        'Help I Forgot My Pants',
+        'I\'m flying, Jack!',
+        'I\'m falling…',
+        'I\'s summer',
         'Naked at school again',
-        "I can't drive my car",              
+        "I can't drive my car",
       ]} />
     </div>
   )
