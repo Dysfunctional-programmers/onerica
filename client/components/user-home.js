@@ -11,6 +11,13 @@ export const UserHome = (props) => {
   return (
     <div>
       <h3>Welcome, {email}</h3>
+      <ul>
+        <li>The Night Mare</li>
+        <li>Help I Forgot My Pants</li>
+        <li>I'm flying, Jack!</li>
+        <li>I'm falling…</li>
+        <li>It's summer</li>
+      </ul>
     </div>
   )
 }
