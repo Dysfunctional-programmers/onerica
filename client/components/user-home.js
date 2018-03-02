@@ -9,14 +9,16 @@ import {DreamList} from '.'
  */
 export const UserHome = (props) => {
   const {email} = props
+  
 
   return (
     <div>
       <h3>Welcome, {email}</h3>
+      <a onClick={props.logout}>Log out</a>
       <DreamList dreams={[
         'Naked at school again',
         "I can't drive my car",              
-      ]} />
+      ]} />      
     </div>
   )
 }
